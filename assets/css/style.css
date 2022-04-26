@@ -30,6 +30,7 @@ header {
 .logo-img {
     width: 80px;
     height: 80px;
+    border-radius: 40px;
     border:2px solid #b28756;
 }
 
@@ -84,4 +85,67 @@ header {
     width: 100vw;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.banner h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.banner h1 span{
+    color: #b28756;
+}
+
+.banner h2{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    display: block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    border: 1px solid #b28756;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.banner .pointer.actived,
+.banner .pointer:hover{
+    background-color: #b28756;
 }
