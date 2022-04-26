@@ -1,3 +1,5 @@
+/* default project area */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +34,7 @@ header {
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    border:2px solid #b28756;
+    border: 2px solid #b28756;
 }
 
 .menu {
@@ -61,13 +63,13 @@ header {
     font-weight: 600;
 }
 
-.menu .active a, 
+.menu .active a,
 .menu li a:hover {
     border-bottom: 5px solid #b28756;
     color: rgb(187, 187, 187);
 }
 
-.banner{
+.banner {
     background-color: rgb(34, 34, 34);
     height: calc(100vh - 100px);
     background-image: url('../images/bg.jpg');
@@ -76,19 +78,19 @@ header {
     overflow: hidden;
 }
 
-.banner .sliders{
+.banner .sliders {
     height: 100%;
     width: 1000vw;
 }
 
-.banner .slide{
+.banner .slide {
     height: 100%;
     width: 100vw;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.banner .slide-area{
+.banner .slide-area {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,25 +98,25 @@ header {
     flex-direction: column;
 }
 
-.banner h1{
+.banner h1 {
     color: white;
     font-weight: bold;
     font-size: 50px;
     text-transform: uppercase;
 }
 
-.banner h1 span{
+.banner h1 span {
     color: #b28756;
 }
 
-.banner h2{
+.banner h2 {
     color: white;
     text-transform: uppercase;
     margin-top: 20px;
 }
 
-.banner a {
-    display: block;
+a.button {
+    display: inline-block;
     background-color: #b28756;
     color: white;
     text-transform: uppercase;
@@ -126,7 +128,7 @@ header {
     margin-top: 30px;
 }
 
-.banner .sliders-pointers{
+.banner .sliders-pointers {
     width: 100vw;
     height: 20px;
     position: absolute;
@@ -136,7 +138,7 @@ header {
     align-items: center;
 }
 
-.banner .pointer{
+.banner .pointer {
     width: 15px;
     height: 15px;
     border-radius: 8px;
@@ -147,53 +149,116 @@ header {
 }
 
 .banner .pointer.actived,
-.banner .pointer:hover{
+.banner .pointer:hover {
     background-color: #b28756;
 }
 
-.defaut{
+.defaut {
     background-color: red;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .defaut .section-title,
-.defaut .section-desc{
+.defaut .section-desc {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.defaut .section-title{
+.defaut .section-title {
     font-size: 20px;
 }
 
-.defaut .section-desc{
+.defaut .section-desc {
     font-size: 10px;
     color: #ccc;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.defaut .section-body{
+.defaut .section-body {
     margin: auto;
     max-width: 1140px;
-    height: 100px;
-    background-color: rgb(54, 54, 54);
 }
 
-.defaut.light{
+.defaut.light {
     background-color: #f7f7f7;
 }
 
-.defaut.light .section-title{
+.defaut.light .section-title,
+.defaut.light .section-body {
     color: black;
 }
 
-.defaut.dark{
+.defaut.dark {
     background-color: #000;
 }
 
-.defaut.dark .section-title{
+.defaut.dark .section-title,
+.defaut.dark .section-body {
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* specific areas */
+
+.section-about-us {
+    display: flex;
+}
+
+.section-about-us--left {
+    flex: 1;
+}
+
+.section-about-us--left p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.section-about-us--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-about-us--right img {
+    width: 420px;
+    box-shadow: 0px 5px 10px rgb(44, 44, 44);
+}
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333; 
+    padding: 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333; 
+}
+
+
+.section-service h4{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
 }
