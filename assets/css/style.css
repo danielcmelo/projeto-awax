@@ -30,7 +30,7 @@ header {
 .logo-img {
     width: 80px;
     height: 80px;
-    background-color: #b28756;
+    border:2px solid #b28756;
 }
 
 .menu {
@@ -62,5 +62,14 @@ header {
 .menu .active a, 
 .menu li a:hover {
     border-bottom: 5px solid #b28756;
+    color: rgb(187, 187, 187);
+}
+
+.banner{
+    background-color: rgb(34, 34, 34);
+    height: calc(100vh - 100px);
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
 
