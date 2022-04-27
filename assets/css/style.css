@@ -346,3 +346,15 @@ a.button {
     font-size: 18px;
     font-weight: 400;
 }
+
+.bg-time{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-time-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 0px;
+}
